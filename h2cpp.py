@@ -1,33 +1,3 @@
-"""
-1. Open the h file
-2. Open new cpp file
-3. #include header file
-4. Write all function definition starters
-5. Close files
-
-Formatting:
-For constructors/destructors:
-ClassName(params);
-->
-ClassName::Classname(params)
-{
-
-}
-
-For all tha functions/operators:
-type funcName(params) isConst?
-->
-type ClassName::funcName(params) isConst?
-{
-
-}
-
-To do:
-- header guard check?
-- maybe make end of declaration checking smarter?
-"""
-
-
 import sys
 
 
