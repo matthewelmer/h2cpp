@@ -1,11 +1,9 @@
 """
 1. Open the h file
-2. Parse out the class name
-3. Figure out what's public and private -OR- just ignore everything that's not public
-4. Read and close h file
-5. Open new cpp file
-6. #include header file
-7. Write all function definition starters
+2. Open new cpp file
+3. #include header file
+4. Write all function definition starters
+5. Close files
 
 Formatting:
 For constructors/destructors:
