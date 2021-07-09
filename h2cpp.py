@@ -36,15 +36,19 @@ if len(sys.argv) != 2:
     print("Usage: h2cpp <header file>")
     sys.exit()
 
+# We know the class name from the header file name
+className = sys.argv[1][:-2]
+# print(f"className: {className}")
 
 
-# Open file
-with open(sys.argv[1], 'r') as hfile:
-    for line in hfile:
-        if "class" in line and ';' in line and line.index("class") < line.index(';'):
-            print(line)
-            # So what I've done is I've found the class declaration, just want to yank its name
-            # and go back and take care of everything else while attempting to preserve comments
-            # (if easily possible)
+# Open files
+hfile = open(sys.argv[1], 'r')
+cppfile = open(className + ".cpp", 'w')
+
+
+# Close files
+hfile.close()
+cppfile.close()
+            
 
 # skip until class declaration
